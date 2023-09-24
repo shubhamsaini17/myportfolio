@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7282a0022.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <div id="header">
+            <nav>
+                <img src="personal-portfolio-img/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#workExperience">Work</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <main>
+            <section class="firstsection">
+                <div class="left">
+                    <div class="leftsection-img">
+                        <img src="personal-portfolio-img/images/background.png" alt="">
+                    </div>
+
+                    <div class="leftsection">
+                       <div class="name"> 
+                         Hi, My name is <span class="pink">Shubham</span>
+                       </div>
+                        <div class="name">and i am a passionate</div>
+                        <span id="element" class="name"></span>
+                        <div class="buttons">
+                            <button class="btn btn2 download" id="btn" >
+                            <a href="https://drive.google.com/file/d/1pKx24uHuGV_jXenx8bu8u75uAIe--gnO/view?usp=sharing" download="">Download Resume</a></button>
+                            <button class="btn btn2 download" id="btn" >
+                                <a href="https://github.com/shubhamsaini17" download="">Visit Github</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightsection">
+                    <img src="personal-portfolio-img/images/bg.png" alt="">
+                </div>
+            </section>
+        </main>
+
+        <!-- ==========    ABOUT   ============ -->
+        <div id="about" class="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">Proactive cyber security engineer, network designing, and web developing skills with a Bachelor’s degree in Computer Science Engineering with a specialization in cyber security. Experienced in penetration testing and network designing, confident in working with a broad range of monitoring, configuring, and analyzing tools. Effective communicator and problem-solver, looking for a challenging career in the Information Technology industry.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Cyber Security Engineer</span><br>Ethical Hacker</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July/2023 - Current</span><br>Penetration Tester at Right Turn Security</li>
+                            <li><span>August/2023 - September/2023</span><br>Web Developer at OctaNet</li>
+                            <li><span>June/2022 - August/2022</span><br>Internship at Edunet Foundation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Btech Cybersecurity, PIET College</li>
+                            <li><span>2020</span><br>Class 12, CBSE</li>
+                            <li><span>2018</span><br>Class 10, CBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======= Work Experience ======== -->
+        <div class="secondSection" id="workExperience">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="personal-portfolio-img/images/developer.png" alt="">
+                    <div class="vertical-title">
+                        Internship at Edunet Foundation <br> (June/2022 - August/2022)
+                    </div>
+                    <div class="vertical-desc">Worked with 6-member team to develop a Steganography Tool, incorporating cryptographic algorithms and secret key. 
+                </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="personal-portfolio-img/images/developer.png" alt="">
+                    <div class="vertical-title">
+                        Web Developer at OctaNet<br> (August/2023 - September/2023)
+                    </div>
+                    <div class="vertical-desc">Created Web Applications for clients to help them take their business online.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="personal-portfolio-img/images/hacker.png" alt="">
+                    <div class="vertical-title">
+                        Penetration Tester at Right Turn Security <br> (July/2023 - Current)
+                    </div>
+                    <div class="vertical-desc"> Skilled in web application security and testing, proficient in a wide array of Linux tools for web and network testing, 
+                        monitoring, and analysis. <br>(OWASP TOP 10)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- my services -->
+        <!-- portfolio -->
+
+
+        <!-- contact -->
+
+        <div id="contact" class="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> 123subm@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8168762025</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shubhamsaini17/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/shubhamsaini17"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  <a href="https://drive.google.com/file/d/1pKx24uHuGV_jXenx8bu8u75uAIe--gnO/view?usp=sharing" download="" class="btn btn2">Download Resume</a>  
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" id="btn">Submit</button>
+                    </form>
+                <span id="msg"></span> 
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="copyright">
+            <p>Copyright Shubham <i class="fa-solid fa-heart"></i>- All rights reserved</p>
+        </footer>
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxR5x6R0TYGpPN1D1I19e7IN1lkLCRGMFhua9j099aeMcTurYPKR3UPODs_RutzEIdd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""   
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+
+      </script>
+</body>
+
+</html>

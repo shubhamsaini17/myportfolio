@@ -415,7 +415,7 @@ nav .fas{
         width: 200px;
         height: 100vh;
         padding-top: 70px;
-        z-index: 2;
+        z-index: 99;
         transition: right 0.5s;
     }
     nav ul li{
@@ -599,6 +599,27 @@ nav .fas{
         }
 
        
+        /* cursor */
 
+        *::selection{
+            background-color: #fff;
+            color: #ff004f;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        #cursor {
+            display: none;
+        }
+        
+        #cursor-blur {
+            height: 330px;
+            width: 330px;
+            background-color:#ff005135;
+            border-radius: 50%;
+            position: fixed;
+            filter: blur(70px);
+            z-index: 9;
+        }
         
 }

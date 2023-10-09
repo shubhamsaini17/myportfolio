@@ -1,7 +1,7 @@
 
 
 var typed = new Typed('#element', {
-    strings: ['Web Developer', 'Ethical Hacker', 'Web Deginer', ' Penetration Tester'],
+    strings: ['Web Developer', 'Ethical Hacker', ' Penetration Tester'],
     typeSpeed: 50,
 });
 // ----------------------------------------
